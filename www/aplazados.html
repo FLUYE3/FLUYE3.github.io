@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructivo Interactivo: Examen de Aplazados 2025-I</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* FLUYE STYLE - Guía de Estilo "Tech Fluido" */
+        :root {
+            --azul-oscuro: #0A2540;
+            --azul-claro: #00B5E2;
+            --celeste-detalle: #77DFF8;
+            --blanco: #FFFFFF;
+            --rojo-alerta: #FF4F4F;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+        }
+        .bg-hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at top right, rgba(0, 181, 226, 0.15), transparent 50%),
+                              radial-gradient(circle at bottom left, rgba(0, 181, 226, 0.1), transparent 60%);
+            z-index: 0;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 1.25rem; /* 20px */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+        }
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1.0s; }
+        .delay-6 { animation-delay: 1.2s; }
+        .delay-7 { animation-delay: 1.4s; }
+        
+        .link-anexo {
+            text-decoration: underline;
+            color: var(--celeste-detalle);
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .link-anexo:hover {
+            color: var(--blanco);
+        }
+        .boton-principal {
+            background-color: var(--azul-claro);
+            color: var(--azul-oscuro);
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px 0 rgba(0, 181, 226, 0.5);
+        }
+        .boton-principal:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px 5px rgba(0, 181, 226, 0.6);
+        }
+
+        /* Tipografía Jerárquica */
+        .titulo-principal { font-weight: 900; /* Poppins Black */ }
+        .subtitulo-accion { font-weight: 700; /* Poppins Bold */ color: var(--azul-claro); }
+        .titulo-seccion { font-weight: 700; /* Poppins Bold */ color: var(--celeste-detalle); }
+        .texto-destacado { font-weight: 700; /* Poppins Bold */ }
+        .texto-cuerpo { font-weight: 400; /* Poppins Regular */ color: rgba(255, 255, 255, 0.85); }
+        .texto-pequeno { font-weight: 500; /* Poppins Medium */ }
+    </style>
+</head>
+<body class="bg-azul-oscuro">
+    <div class="relative max-w-md mx-auto min-h-screen overflow-x-hidden">
+        <div class="bg-hero-pattern"></div>
+        <div class="relative z-10 p-6 sm:p-8 space-y-8">
+
+            <!-- 1. Encabezado -->
+            <header class="text-center animate-slide-up">
+                <h1 class="text-4xl md:text-5xl text-white leading-tight titulo-principal">Instructivo Interactivo</h1>
+                <p class="text-xl subtitulo-accion">Examen de Aplazados 2025-I</p>
+            </header>
+
+            <!-- 2. Condiciones Clave -->
+            <section class="animate-slide-up delay-1">
+                <h2 class="text-2xl mb-4 titulo-seccion">Condiciones Clave</h2>
+                <div class="space-y-3">
+                    <div class="glass-card p-4 flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-azul-claro flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h3 class="texto-destacado">Sin Nota Mínima</h3>
+                            <p class="text-sm texto-cuerpo">Todos los desaprobados en 2025-I pueden participar.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-4 flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-azul-claro flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        <div>
+                            <h3 class="texto-destacado">Mínimo 8 Alumnos</h3>
+                            <p class="text-sm texto-cuerpo">Es el mínimo de inscritos para abrir un curso.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-4 flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-azul-claro flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1h4v1h-4zm-2 18h4v-1h-4v1zM5 12H4v1h1v-1zm15 0h-1v1h1v-1z"></path></svg>
+                        <div>
+                            <h3 class="texto-destacado">Monto Mínimo: S/ 240.00</h3>
+                            <p class="text-sm texto-cuerpo">El curso debe recaudar este monto total para realizarse.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Estructura de Costos -->
+            <section class="animate-slide-up delay-2">
+                <h2 class="text-2xl mb-4 titulo-seccion">Estructura de Costos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
+                    <div class="glass-card p-4">
+                        <p class="texto-pequeno">1ra vez desaprobado</p>
+                        <p class="text-3xl font-black" style="color: var(--azul-claro);">S/ 30.00</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <p class="texto-pequeno">2da Repitencia</p>
+                        <p class="text-3xl font-black" style="color: var(--azul-claro);">S/ 51.00</p>
+                        <p class="text-xs texto-cuerpo opacity-70 mt-1">(S/ 30 aplazado + S/ 21 repitencia)</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <p class="texto-pequeno">3ra Repitencia</p>
+                        <p class="text-3xl font-black" style="color: var(--azul-claro);">S/ 82.00</p>
+                        <p class="text-xs texto-cuerpo opacity-70 mt-1">(S/ 30 aplazado + S/ 52 repitencia)</p>
+                    </div>
+                    <div class="glass-card p-4 border-rojo-alerta">
+                        <p class="texto-pequeno" style="color: var(--rojo-alerta);">4ta Repitencia</p>
+                        <p class="text-3xl font-black" style="color: var(--rojo-alerta);">S/ 103.00</p>
+                        <p class="text-xs texto-cuerpo opacity-70 mt-1">(S/ 30 aplazado + S/ 73 repitencia)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Proceso de Pago e Inscripción -->
+            <section class="animate-slide-up delay-3">
+                <h2 class="text-2xl mb-4 titulo-seccion">Guía de Pago e Inscripción</h2>
+                <div class="glass-card p-6 space-y-5">
+                    <div class="flex space-x-4">
+                        <div class="flex-shrink-0 bg-azul-claro text-azul-oscuro w-10 h-10 rounded-full flex items-center justify-center font-black text-2xl">1</div>
+                        <div class="texto-cuerpo">
+                            <p class="font-bold text-white">Ingresa a San Market:</p>
+                            <p>Ve al portal <a href="https://sanmarket.unmsm.edu.pe/#/" target="_blank" class="link-anexo">sanmarket.unmsm.edu.pe</a> y haz clic en "Catálogo".</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="flex-shrink-0 bg-azul-claro text-azul-oscuro w-10 h-10 rounded-full flex items-center justify-center font-black text-2xl">2</div>
+                        <div class="texto-cuerpo">
+                            <p class="font-bold text-white">Busca el trámite:</p>
+                            <p>Escribe "aplazados" y selecciona "Ciencias Físicas". Agrega al carrito el concepto de S/ 30.00 y luego el concepto de repitencia si te corresponde.</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="flex-shrink-0 bg-azul-claro text-azul-oscuro w-10 h-10 rounded-full flex items-center justify-center font-black text-2xl">3</div>
+                        <div class="texto-cuerpo">
+                            <p class="font-bold text-white">Paga y guarda el voucher:</p>
+                            <p>Haz clic en el carrito, selecciona "Pagar", completa tus datos y guarda el voucher que llegará a tu correo.</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="flex-shrink-0 bg-azul-claro text-azul-oscuro w-10 h-10 rounded-full flex items-center justify-center font-black text-2xl">4</div>
+                        <div class="texto-cuerpo">
+                            <p class="font-bold text-white">Prepara tus documentos:</p>
+                            <p>Ten listos el voucher (con tus datos al reverso), tu historial y los Anexos llenos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Checklist y Formulario -->
+            <section class="animate-slide-up delay-4">
+                 <h2 class="text-2xl mb-4 titulo-seccion">Checklist y Formulario</h2>
+                 <div class="glass-card p-6 space-y-4">
+                    <p class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Voucher de pago (con datos al reverso).</p>
+                    <p class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Historial Académico de Calificaciones.</p>
+                    <p class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><a href="https://drive.google.com/drive/folders/170_k9asXXZ02l737EW1Q1jwYbKskFTCO?usp=sharing" target="_blank" class="link-anexo">Descargar Anexos 01 y 02</a></p>
+                    <a href="https://forms.gle/HBhoqUvovkTSZgtk8" target="_blank" class="block w-full text-center py-4 mt-4 rounded-xl font-bold text-lg boton-principal">
+                        Ir al Formulario de Inscripción
+                    </a>
+                 </div>
+            </section>
+
+            <!-- 6. Información Adicional -->
+            <section class="animate-slide-up delay-5">
+                <h2 class="text-2xl mb-4 titulo-seccion">Información Adicional</h2>
+                <div class="glass-card p-6 space-y-4 texto-cuerpo">
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-celeste-detalle flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 4v4m-2-2h4M5 3a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2H5z"></path></svg>
+                        <p><strong class="font-bold text-white">Nota Máxima: 15.</strong> Esta es la calificación más alta que puedes obtener.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-celeste-detalle flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <p><strong class="font-bold text-white">Límite de 2 Cursos:</strong> Puedes inscribirte en un máximo de dos asignaturas.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-rojo-alerta flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <p><strong class="font-bold text-white">Cruce de Horarios:</strong> La facultad no se responsabiliza si los horarios coinciden.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-celeste-detalle flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <p><strong class="font-bold text-white">Publicación de Notas:</strong> Se reflejarán en el sistema a partir del 01 de agosto.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 7. Fechas Límite -->
+            <section class="bg-azul-claro text-azul-oscuro text-center p-6 rounded-2xl animate-slide-up delay-6" style="box-shadow: 0 0 20px 0 rgba(0, 181, 226, 0.5);">
+                <h2 class="text-2xl titulo-principal">¡FECHAS LÍMITE!</h2>
+                <div class="mt-4 space-y-2">
+                    <div>
+                        <p class="font-bold">Inscripción y Pago:</p>
+                        <p class="text-lg font-semibold">Jueves 24 de Julio - 15:00h</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Publicación de Cursos Aptos:</p>
+                        <p class="text-lg font-semibold">Jueves 24 de Julio - 16:00h</p>
+                    </div>
+                     <div>
+                        <p class="font-bold">Día del Examen:</p>
+                        <p class="text-lg font-semibold">Viernes 25 de Julio</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Pie de Página -->
+            <footer class="text-center pt-6 mt-4 border-t border-white/10 animate-slide-up delay-7">
+                <p class="text-sm text-celeste-detalle opacity-80">Un instructivo elaborado por el</p>
+                <p class="text-base font-bold text-white">Tercio Estudiantil Mayoría FCF - FLUYE</p>
+                <p class="text-xs text-white/60">en coordinación con la Dirección de Escuela.</p>
+            </footer>
+
+        </div>
+    </div>
+</body>
+</html>
