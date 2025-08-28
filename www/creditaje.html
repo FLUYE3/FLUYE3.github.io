@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución al Problema de Creditaje - FLUYE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0A2540; /* Azul Oscuro Corporativo */
+            color: #FFFFFF; /* Blanco Puro */
+        }
+        .accent-text {
+            color: #00B5E2; /* Azul Claro/Cian Energético */
+        }
+        .secondary-accent-text {
+            color: #77DFF8; /* Celeste Cielo */
+        }
+        .card-bg {
+            background-color: #0F2C4B; /* Un tono ligeramente más claro que el fondo */
+            border: 1px solid rgba(0, 181, 226, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-bg:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 181, 226, 0.2);
+        }
+        .icon-stroke {
+            stroke: #00B5E2; /* Acento Primario */
+        }
+        .main-card {
+            background: linear-gradient(135deg, #00B5E2, #0077b6);
+            box-shadow: 0 10px 40px rgba(0, 181, 226, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#0A2540] p-4 sm:p-6 md:p-12">
+
+    <div class="container mx-auto">
+
+        <!-- Header -->
+        <header class="text-center mb-10 md:mb-16">
+            <div class="inline-block bg-[#00B5E2]/10 text-[#77DFF8] text-sm font-semibold px-4 py-1 rounded-full mb-4">
+                Tercio Estudiantil Fluye – Mayoría Estudiantil
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white">
+                <span class="accent-text">Solución Histórica</span> al Problema de Creditaje
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
+                Una gestión exitosa que beneficia a egresados y estudiantes de la Facultad de Ciencias Físicas.
+            </p>
+        </header>
+
+        <!-- Infographic Grid -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+            <!-- Card 1: El Problema -->
+            <div class="card-bg rounded-2xl p-6 md:p-8">
+                <div class="flex items-center gap-4">
+                    <div class="bg-[#FF4F4F]/10 p-3 rounded-full">
+                        <svg class="w-6 h-6 text-[#FF4F4F]" fill="none" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <h2 class="text-xl font-bold text-white">El Problema</h2>
+                </div>
+                <p class="mt-4 text-white/70">
+                    Un error histórico en la suma de créditos impedía y retrasaba el egreso de muchos estudiantes, generando incertidumbre y costos adicionales.
+                </p>
+            </div>
+
+            <!-- Card 2: La Gestión -->
+            <div class="card-bg rounded-2xl p-6 md:p-8">
+                <div class="flex items-center gap-4">
+                     <div class="bg-[#FFD700]/10 p-3 rounded-full">
+                        <svg class="w-6 h-6 text-[#FFD700]" fill="none" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"></path></svg>
+                    </div>
+                    <h2 class="text-xl font-bold text-white">Nuestra Gestión</h2>
+                </div>
+                <p class="mt-4 text-white/70">
+                    Desde FLUYE, llevamos la voz de los afectados al Consejo de Facultad, impulsando el diálogo y trabajando en una propuesta de solución justa y definitiva.
+                p>
+            </div>
+            
+            <!-- Card 3: La Solución (Main) -->
+            <div class="main-card text-white rounded-2xl shadow-2xl p-6 md:p-8 md:col-span-2 lg:col-span-1 lg:row-span-2">
+                 <div class="flex items-center gap-4">
+                    <div class="bg-white/20 p-3 rounded-full">
+                        <svg class="w-8 h-8" fill="none" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-black">¡Solución Aprobada!</h2>
+                </div>
+                <p class="mt-4 font-semibold">
+                    El 28 de agosto, el Consejo de Facultad aprobó por <span class="font-extrabold underline decoration-wavy">UNANIMIDAD</span> la solución al problema de creditaje.
+                </p>
+                <div class="mt-6 bg-black/20 p-4 rounded-lg">
+                    <p class="text-sm font-bold secondary-accent-text">BENEFICIARIOS:</p>
+                    <ul class="mt-2 list-disc list-inside space-y-1">
+                        <li>Egresados afectados.</li>
+                        <li>Estudiantes próximos a egresar.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 4: ¿Qué Sigue? -->
+            <div class="card-bg rounded-2xl p-6 md:p-8">
+                <div class="flex items-center gap-4">
+                    <div class="bg-[#00B5E2]/10 p-3 rounded-full">
+                        <svg class="w-6 h-6 icon-stroke" fill="none" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 12h9.75M10.5 18h9.75M3.75 6h.008v.008H3.75V6zm.008 6h-.008v.008h.008v-.008zm0 6h-.008v.008h.008v-.008z"></path></svg>
+                    </div>
+                    <h2 class="text-xl font-bold text-white">¿Qué Sigue?</h2>
+                </div>
+                <p class="mt-4 text-white/70">
+                    La Facultad informará en los próximos días, a través de sus **canales oficiales**, los trámites y el procedimiento exacto que cada estudiante deberá seguir.
+                </p>
+            </div>
+
+             <!-- Card 5: Compromiso Fluye -->
+            <div class="card-bg rounded-2xl p-6 md:p-8">
+                <div class="flex items-center gap-4">
+                    <div class="bg-[#77DFF8]/10 p-3 rounded-full">
+                        <svg class="w-6 h-6 secondary-accent-text" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm2.528 13.454l-3.012-2.23a.75.75 0 0 0-.932 0l-3.012 2.23a.75.75 0 0 1-1.146-.645V9.25a.75.75 0 0 1 .75-.75h7.624a.75.75 0 0 1 .75.75v5.559a.75.75 0 0 1-1.146.645z"></path></svg>
+                    </div>
+                    <h2 class="text-xl font-bold text-white">Compromiso FLUYE</h2>
+                </div>
+                <p class="mt-4 text-white/70">
+                    Tu voz es nuestra fuerza. Seguimos trabajando por una facultad más justa y transparente, fiscalizando y gestionando soluciones concretas.
+                </p>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 md:mt-20">
+            <p class="font-bold text-lg accent-text tracking-widest">
+                #FLUYE #UNMSM #CienciasFisicas #CreditajeSolucionado
+            </p>
+            <p class="text-sm text-white/60 mt-2 font-semibold">
+                Tercio Estudiantil Fluye – Mayoría Estudiantil
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
